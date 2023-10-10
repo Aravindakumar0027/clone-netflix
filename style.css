@@ -1,0 +1,262 @@
+*{
+    padding: 0%;
+    margin: 0%;
+}
+.header{
+    background-image:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)) ,url(logo\ netflix.jpg);
+    height: 100vh;
+    width: 100%;
+}
+body{
+    background-color: black;
+    color: aliceblue;
+ text-align: center;
+   
+   
+}
+    
+nav{
+ 
+    display: flex;
+   text-align: center;
+    justify-content: space-between;  
+    margin: 0px 30px; 
+
+}
+#logo{
+    width: 19rem;
+    height: 10rem;
+    margin-top: 20PX;
+    color: transparent;
+    background-color: transparent;
+    
+    
+}
+.login_btn{
+    margin-top: 20PX;   
+}
+.centercontent{
+    align-items: center;
+    text-align: center;
+    margin-top:180px;
+    color: aliceblue;
+    font-size:x-large;
+  
+}
+.inputget{
+    display: flex;
+    margin-left: 28rem;
+    margin-top: 20px;
+    
+  
+}
+input{
+    padding: 1rem 3rem;
+    font-size: large;
+
+}
+button{
+    padding: 1rem 3rem;
+    cursor: pointer;
+    font-size: large;
+
+}
+.features{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+.first{
+    display: flex;
+    font-size: large;
+    margin: 0px 50px;
+}
+.content{
+ margin-top: 180px;
+
+}
+.accordian h1{
+    text-align: center;
+    
+}
+.accordian{
+    margin: 60px auto;
+    width: 100%;
+    max-width: 750px;
+    
+}
+.accordian li{
+    list-style: none;
+    width: 100%;
+    padding: 5px;
+
+}
+
+.accordian label{
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    font-size: 18px;
+    background: #303030;
+    margin-bottom: 2px;
+    cursor: pointer;
+    position: relative;
+    font-weight: 900;
+    
+}
+label::after{
+    content: "+";
+    font-size: 34px;
+    position: absolute;
+    right: 20px;
+    transition: transform 0.5s;
+}
+input[type="radio"]{
+    display: none;
+}
+.accordian .con{
+    background: #303030;
+    text-align: left;
+    padding: 0 20px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-hight 0.5s,padding 0.5s;
+}
+.accordian input[type="radio"]:checked+label+.con{
+    max-height: 600px;
+    padding: 30px 20px;
+}
+.accordian input[type="radio"]:checked+label::after{
+  transform: rotate(135deg);
+}
+
+#red{
+    background-color: red;
+    color: white;
+}
+
+.userdata{
+    margin-top: 40px;
+}
+.userdata h1{
+    margin: 20px;
+}
+footer{
+    padding: 50px 15% 10px;
+    border-top: 6px solid #333;
+    color: #777;
+
+
+
+}
+ 
+footer .col{
+    flex-basis: 25%;
+    flex-grow: 1;
+    margin-bottom: 20px;
+    padding: 10px 1rem;
+   
+    
+
+
+}
+
+footer .row{
+   flex-direction: row;
+  padding: 10px 10px;
+}
+
+
+footer .col  a{
+    display: block;
+    text-decoration: none;
+    color: #777;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+footer .row .col a{
+    font-size: large;
+    font-weight: bold;
+}
+
+
+
+
+
+@media all and (max-width:639px) {
+
+    nav{
+ 
+        display: flex;
+       text-align: center;
+        justify-content: space-between;  
+        margin: 0px 10px; 
+    
+    }
+    #logo{
+        width: 9rem;
+        height: 5rem;
+        margin-top: 20PX;  
+    }
+    .login_btn{
+        margin-top: 20PX;   
+    }
+    button{
+        padding:0.5rem 0.5rem;
+        cursor: pointer;
+        font-size:small;
+    }
+    .centercontent{
+        text-align: center;
+        margin-top:180px;
+        color: aliceblue;
+        font-size:small;
+      
+    }
+    .inputget{
+        display: flex;
+        margin-left: 2rem;
+        margin-top: 20px;
+      
+    }
+    input{
+        font-size: small;
+    }
+    .features{
+        display: flex;
+       
+    }
+    .first{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+     }
+     .content{
+        margin: 20px;
+ 
+       
+       }
+     #photo{
+        width: 990px;
+        max-height: 20vh;
+        max-width: 50%;
+
+     }
+     .accordian{
+        margin: 60px auto;
+        width: 100%;
+        max-width: 350px;
+        
+    }
+    .userdata input{
+        padding: 10px;
+    }
+
+    footer .col{
+        flex-basis: 25%;
+        flex-grow: 1;
+        margin-bottom: 20px;
+
+}
+      
+}
